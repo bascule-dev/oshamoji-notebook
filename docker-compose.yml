@@ -1,0 +1,10 @@
+version: '2.3'
+services:
+  app:
+    build: .
+    runtime: nvidia
+    ports:
+      - "8888:8888"
+    volumes:
+      - .:/usr/src/app
+      - /tmp:/tmp
